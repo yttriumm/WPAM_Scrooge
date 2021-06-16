@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/receiptDetailsPeopleDueList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.ReceiptDetailsFragment">
+
+
+        <TextView
+            android:id="@+id/receiptDetailsTextViewReceiptName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/receiptTitleLabel"
+            android:textAllCaps="false"
+            android:textColor="@color/palette_first"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/receiptDetailsReceiptDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/receiptRowReceiptDate"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receiptDetailsTextViewReceiptName" />
+
+        <TextView
+            android:id="@+id/receiptDetailsTextViewPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corners"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_baseline_group_24"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Osoby"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receiptDetailsTextViewTotal" />
+
+        <TextView
+            android:id="@+id/receiptDetailsTextViewTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="183.49 zł"
+            android:textColor="@color/palette_first"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receiptDetailsReceiptDate" />
+
+        <LinearLayout
+            android:id="@+id/receiptDetailsEntryRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receiptDetailsTextViewEntries">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/receiptDetailsPeopleDue"
+            android:layout_width="396dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receiptDetailsTextViewPeopleDue">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/receiptDetailsTextViewEntries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Pozycje"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receiptDetailsTextViewPeople" />
+
+        <TextView
+            android:id="@+id/receiptDetailsTextViewPeopleDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Podział"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receiptDetailsEntryRow" />
+
+        <Button
+            android:id="@+id/receiptDetailsDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:drawableLeft="@drawable/ic_baseline_delete_24"
+            android:text="Usuń ten paragon"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/receiptDetailsPeopleDue" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

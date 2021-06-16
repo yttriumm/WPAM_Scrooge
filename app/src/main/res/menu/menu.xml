@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_dashboard_overview"
+        android:icon="@drawable/dashboard_overview"
+        android:title="Przegląd"/>
+
+    <item
+     android:id="@+id/ic_dashboard_new"
+     android:icon="@drawable/dashboard_new"
+     android:title="Dodaj"
+     />
+
+    <item
+        android:id="@+id/ic_dashboard_stats"
+        android:icon="@drawable/dashboard_stats"
+        android:title="Konto"
+        />
+
+
+
+</menu>

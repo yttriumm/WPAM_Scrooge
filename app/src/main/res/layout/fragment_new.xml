@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.NewFragment">
+
+
+        <TextView
+            android:id="@+id/newReceiptLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/newReceiptLabel"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/receiptTitleEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Tytuł..."
+            android:inputType="textPersonName"
+
+            android:textColor="@color/palette_second"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/newReceiptLabel"
+            app:layout_constraintTop_toBottomOf="@+id/newReceiptLabel" />
+
+        <LinearLayout
+            android:id="@+id/newReceiptPeopleList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/receiptTitleEditText"
+            app:layout_constraintTop_toBottomOf="@+id/receiptTitleEditText">
+
+            <Button
+                android:id="@+id/newPersonButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:text="@string/buttonAddPeopleToReceiptLabel"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="160dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newReceiptEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/newReceiptPeopleList"
+            app:layout_constraintTop_toBottomOf="@+id/newReceiptPeopleList">
+
+            <Button
+                android:id="@+id/newReceiptEntryAddButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:text="@string/buttonAddReceiptEntryLabel"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="160dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/newReceiptOverwiew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+
+            app:layout_constraintStart_toStartOf="@+id/newReceiptEntry"
+            app:layout_constraintTop_toBottomOf="@+id/newReceiptEntry">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/newReceiptButtonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Dodaj"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newReceiptOverwiew" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

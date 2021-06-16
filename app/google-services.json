@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "900665705228",
+    "project_id": "wpam-a021f",
+    "storage_bucket": "wpam-a021f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900665705228:android:19aba87d42888e24a47f29",
+        "android_client_info": {
+          "package_name": "com.wpam.scrooge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900665705228-mk324h14d3j32uqtot6dj23m4t18bpq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wpam.scrooge",
+            "certificate_hash": "cb1a8fd3c2563c3862a913283cb8fd8538e74572"
+          }
+        },
+        {
+          "client_id": "900665705228-91mdrsgmvpooaj3enrctvrmg08d4qi61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC916GWU6tdhWVXr_K5oS4Io62sV2wcylo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900665705228-91mdrsgmvpooaj3enrctvrmg08d4qi61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

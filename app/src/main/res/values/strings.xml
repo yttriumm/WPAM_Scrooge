@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Scrooge</string>
+    <string name="loginLabel">Logowanie</string>
+    <string name="registerLabel">Rejestracja</string>
+    <string name="loginButtonText">Zaloguj się</string>
+    <string name="registerButtonText">Zarejestruj</string>
+    <string name="emailText">E-mail</string>
+    <string name="passwordText">Hasło</string>
+    <string name="noAccountText">Nie masz konta?</string>
+    <string name="registerLinkText">Zarejestruj się</string>
+    <string name="registerNameLabel">Imię</string>
+    <string name="dashboardTextViewHelloGreeting">Cześć,</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="newReceiptLabel">Nowy paragon</string>
+    <string name="newReceiptPeopleLabel">Osoby</string>
+    <string name="buttonAddPeopleToReceiptLabel">Dodaj osobę</string>
+    <string name="receiptTitleLabel">Tytuł</string>
+    <string name="buttonAddReceiptEntryLabel">Dodaj pozycję</string>
+    <string name="addReceiptEntryTitle">Nazwa</string>
+    <string name="addReceiptEntryValue">Wartość</string>
+    <string name="addReceiptEntryPeople">Osoby</string>
+    <string name="receiptRowReceiptDate">Data</string>
+    <string name="overviewYourReceiptsLabel">Twoje paragony:</string>
+    <string name="overviewYourReceiptsNoReceipt">Nie masz żadnych paragonów.</string>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingBottom="15dp">
+
+
+    <TextView
+        android:id="@+id/receiptRowReceiptTitle"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/receiptTitleLabel"
+        android:textColor="@color/palette_first"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/receiptRowReceiptDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/receiptRowReceiptDate"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/receiptRowReceiptTitle"
+        app:layout_constraintStart_toEndOf="@+id/receiptRowReceiptTitle"
+        app:layout_constraintTop_toTopOf="@+id/receiptRowReceiptTitle" />
+
+    <TextView
+        android:id="@+id/receiptRowReceiptValue"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/addReceiptEntryValue"
+        android:textColor="@color/palette_second"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/receiptRowReceiptTitle"
+        app:layout_constraintEnd_toStartOf="@+id/receiptRowDetailsButton"
+        app:layout_constraintTop_toTopOf="@+id/receiptRowReceiptTitle" />
+
+    <TextView
+        android:id="@+id/receiptRowDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@drawable/rounded_corners"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/receiptRowReceiptTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/receiptRowReceiptTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
